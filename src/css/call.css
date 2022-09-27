@@ -1,0 +1,23 @@
+.call {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    border-radius: 15px;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.callLeft {
+    display: flex;
+}
+
+.callInfo {
+    margin-left: 25px;
+}
+
+.call img {
+    width: 24px;
+}
