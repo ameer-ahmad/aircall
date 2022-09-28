@@ -6,7 +6,7 @@ import voicemail from "../icons/Voicemail.svg"
 import downArrow from "../icons/down-arrow.svg"
 import archiveAdd from "../icons/archive-add.svg"
 
-const Call = ({call, setVisibility, index}) => {
+const Call = ({call, setVisibility, index, archiveCall}) => {
 
     const renderCallIcon = (callType) => {
         switch(callType) {
@@ -33,7 +33,7 @@ const Call = ({call, setVisibility, index}) => {
         </div>
         <div className="callRight">
             <img src={downArrow} alt="down arrow" onClick={() => setVisibility(index)} />
-            <img src={archiveAdd} alt="archive add" />
+            <img src={archiveAdd} alt="archive add" onClick={() => archiveCall(index)}/>
         </div>
     </div>
   )

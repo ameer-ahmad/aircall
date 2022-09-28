@@ -16,6 +16,15 @@
     margin-left: 25px;
 }
 
+.callInfo .from {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.callInfo .to {
+    font-size: 11px;
+}
+
 .call img {
     width: 24px;
     filter: invert(60%) sepia(17%) saturate(3845%) hue-rotate(74deg) brightness(96%) contrast(89%);
