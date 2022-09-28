@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import Axios from "axios"
 import Call from './Call'
+import MoreInfo from "./MoreInfo"
 import "../css/activityFeed.css"
 
 const ActivityFeed = () => {
@@ -16,7 +17,10 @@ const ActivityFeed = () => {
   return (
     <div className="activityFeed">
         {calls.map((call, pos) => (
-            <Call call={call} key={pos} />
+            <div className="callContainer" key={pos}>
+                <Call call={call} />
+                <MoreInfo call={call}/>
+            </div>
         ))}
     </div>
   )
