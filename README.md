@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# Aircall: LeapGrad Frontend Development Assesment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+View the deployed app here: https://aircall.netlify.app/
 
-## Available Scripts
+Project Description: Users can view basic call information like whether the call was missed, answered, or went to voice mail. As well as who placed the call, and who it was to. You can click the more details button to view more specific information, such as the date and time the call was made. You can also view from where the call was placed, as well as how long it lasted. Users can also archive a call. Once a call is archived, it is no longer displayed on the activity feed, and is instead viewable on the archives screen. Users can switch to the archives screen to view archived calls, as well as unarchive the calls to bring them back to the activity feed.
 
-In the project directory, you can run:
+The features of the app include:
+- View basic call information
+- View additional call information
+- Archive and Unarchive calls
+- View archived calls
 
+Some features I would like to include if I had more time:
+- Adding animations and transitions
+- Unit testing
+- Save which calls have been archived to local storage
+
+## Local Build
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+​The app on the activity screen:
 
-### `npm test`
+![1](public/screenshot1.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+​The app on the activity screen showing more details:
 
-### `npm run build`
+![2](public/screenshot2.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Empty archives screen:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![3](public/screenshot3.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Archives screen with archived calls:
 
-### `npm run eject`
+![4](public/screenshot4.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Archives screen with archived calls showing more details:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![5](public/screenshot5.png)
