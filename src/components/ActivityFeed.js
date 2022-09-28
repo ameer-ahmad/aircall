@@ -39,7 +39,13 @@ const ActivityFeed = () => {
         let tempArr = calls.filter(el => el !== archive)
         setArchives(prev => [...prev, archive])
         setCalls(tempArr)
-        console.log(calls, archives)
+    }
+
+    const unarchiveCall = (i) => {
+        let unarchive = archives[i];
+        let tempArr = archives.filter(el => el !== unarchive)
+        setCalls(prev => [...prev, unarchive])
+        setArchives(tempArr)
     }
 
   return (
@@ -51,13 +57,13 @@ const ActivityFeed = () => {
         {isArchiveScreen ?
             archives.map((archive, pos) => (
                 <div className="callContainer" key={pos}>
-                    <Call call={archive} setVisibility={viewMoreDetails} index={pos} />
+                    <Call call={archive} setVisibility={viewMoreDetails} index={pos} archiveCall={unarchiveCall} isArchiveScreen={isArchiveScreen} />
                     <MoreInfo call={archive} visibility={moreDetailsVisibility} index={pos} />
                 </div>
             ))
          : calls.map((call, pos) => (
             <div className="callContainer" key={pos}>
-                <Call call={call} setVisibility={viewMoreDetails} index={pos} archiveCall={archiveCall} />
+                <Call call={call} setVisibility={viewMoreDetails} index={pos} archiveCall={archiveCall} isArchiveScreen={isArchiveScreen} />
                 <MoreInfo call={call} visibility={moreDetailsVisibility} index={pos} />
             </div>
         ))} 
