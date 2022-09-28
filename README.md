@@ -1,6 +1,6 @@
 # Aircall: LeapGrad Frontend Development Assesment
 
-View the deployed app here: https://aircall.netlify.app/
+View the deployed app here: https://aircall-leap.netlify.app/
 
 Project Description: Users can view basic call information like whether the call was missed, answered, or went to voice mail. As well as who placed the call, and who it was to. You can click the more details button to view more specific information, such as the date and time the call was made. You can also view from where the call was placed, as well as how long it lasted. Users can also archive a call. Once a call is archived, it is no longer displayed on the activity feed, and is instead viewable on the archives screen. Users can switch to the archives screen to view archived calls, as well as unarchive the calls to bring them back to the activity feed.
 
