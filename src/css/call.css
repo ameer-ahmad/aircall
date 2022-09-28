@@ -1,6 +1,5 @@
 .call {
     border: 1px solid rgba(0, 0, 0, 0.1);
-    margin-bottom: 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,10 +18,12 @@
 
 .call img {
     width: 24px;
+    filter: invert(60%) sepia(17%) saturate(3845%) hue-rotate(74deg) brightness(96%) contrast(89%);
 }
 
 .callRight img {
     cursor: pointer;
     margin-left: 10px;
     width: 18px;
+    filter: invert(0%) sepia(100%) saturate(7442%) hue-rotate(192deg) brightness(83%) contrast(112%);
 }

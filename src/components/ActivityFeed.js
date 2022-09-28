@@ -7,6 +7,7 @@ import "../css/activityFeed.css"
 const ActivityFeed = () => {
 
     const [calls, setCalls] = useState([])
+    const [moreDetailsVisibility, setMoreDetailsVisibility] = useState([false])
     
     useEffect(() => {
         Axios.get("https://aircall-job.herokuapp.com/activities").then((res) => {
@@ -18,8 +19,8 @@ const ActivityFeed = () => {
     <div className="activityFeed">
         {calls.map((call, pos) => (
             <div className="callContainer" key={pos}>
-                <Call call={call} />
-                <MoreInfo call={call}/>
+                <Call call={call} visibility={moreDetailsVisibility} setVisibility={setMoreDetailsVisibility} />
+                <MoreInfo call={call} visibility={moreDetailsVisibility} />
             </div>
         ))}
     </div>
