@@ -44,9 +44,9 @@ const ActivityFeed = () => {
 
   return (
     <div className="activityFeed">
-        <div>
-            <a href="#">Activity</a>
-            <a href="#">Archives</a>
+        <div className="btnContainer">
+            <button className={isArchiveScreen ? "btnToggle" : "btnToggle active"} onClick={() => setIsArchiveScreen(false)}>Activity</button>
+            <button className={isArchiveScreen ? "btnToggle active" : "btnToggle"} onClick={() => setIsArchiveScreen(true)}>Archives</button>
         </div>
         {isArchiveScreen ?
             archives.map((archive, pos) => (
